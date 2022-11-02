@@ -1,0 +1,35 @@
+.cont{
+    margin-top: 2rem;    
+}
+
+.card{
+    width:60%;
+    height:auto;
+}
+
+.Row{
+    margin-bottom: 2rem;
+}
+
+.col-4{
+    display: flex!important;    
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+/* Mobile devices */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+        .card{
+            width:80vw;
+            height:auto;
+        }
+
+        .col-4{            
+            width: 90vw!important;
+            justify-content: space-around;
+            margin-bottom: 2rem!important;
+            margin:auto;
+        }
+
+}

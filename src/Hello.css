@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.Hello {
+    text-align: left;
+}
+
+.Hello-header {
+    background: rgb(21, 23, 26);    
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    font-size: calc(10px + 10vmin);
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 2px #181818;
+    color: white;
+}
+
+.Hello-header p{
+    margin:0;
+}
+
+.Hello-face {
+    margin-top: 10vh;
+}
+
+.Hello-txt-box {
+    min-height: 30vh;
+    margin-top: 2vh;
+}
+
+.Chevron {
+    margin-top: 2vh !important;
+    animation: chevronFade 3s ease infinite;
+    visibility: visible;
+}
+
+@keyframes chevronFade {
+    0% {
+        transform: translateY(-40%);
+        opacity: 1;
+    }
+    12.5%{
+        opacity: 0.50;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    37.5%{
+        opacity: 0.0;
+    }
+    50% {
+        transform:translateY(40%);
+        opacity: 0;
+    }
+    62.5%{
+        opacity: 0.0;
+    }
+    75% {
+        opacity: 0.25;
+    }
+    87.5%{
+        opacity: 0.50;
+    }
+    100% {
+        transform: translateY(-40%);
+        opacity: 1;
+    }
+}
+
