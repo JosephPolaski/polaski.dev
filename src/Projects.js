@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import './Projects.css';
 import { getRepoDataProps } from "./ApolloClient/client"
-import { IconName } from "react-icons/di";
-import Button from 'react-bootstrap/Button';
+import { DiReact, DiPython, DiBootstrap, DiNodejsSmall, DiCode } from "react-icons/di";
+import { FaCentos, FaAws } from "react-icons/fa";
+import { SiMariadb } from "react-icons/si";
+//import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -21,6 +23,19 @@ export function Projects() {
     }, []);
 
     if(pinnedRepos.props){
+
+        // form dictionary of icons
+        const iconDict = {
+            code: <DiCode/>,
+            react: <DiReact/>,
+            python: <DiPython/>,
+            bootstrap: <DiBootstrap/>,
+            centos: <FaCentos/>,
+            nodejs: <DiNodejsSmall/>,
+            mariadb: <SiMariadb/>,
+            aws: <FaAws/>
+        }
+
         return(
             //console.log(pinnedRepos.props.pinnedRepos)        
             <div className="cont">

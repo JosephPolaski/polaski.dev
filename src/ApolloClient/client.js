@@ -44,6 +44,13 @@ export async function getRepoDataProps(){
                       primaryLanguage {
                         name
                       }
+                      repositoryTopics(first: 6) {
+                        nodes {
+                          topic {
+                            name
+                          }
+                        }
+                      }
                     }
                   }
                 }
